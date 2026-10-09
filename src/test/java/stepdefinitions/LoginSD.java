@@ -49,4 +49,14 @@ public class LoginSD {
         System.out.println("username="+username);
         System.out.println("password="+password);
     }
+
+    @Given("i open browser")
+    public void iOpenBrowser() {
+        System.out.println("i open browser");
+    }
+
+    @When("i maximize it")
+    public void iMaximizeIt() {
+        System.out.println("i maximize it");
+    }
 }

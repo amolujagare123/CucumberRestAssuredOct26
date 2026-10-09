@@ -1,7 +1,10 @@
 Feature: all login scenarios
 
+  Background: this is background
+    Given i open browser
+    When i maximize it
 
-  @valid
+  @valid @login
   Scenario: to test the functionality of login button for valid input
     Given I am on login page
   #  When I enter correct username and password
@@ -10,7 +13,7 @@ Feature: all login scenarios
     Then I should reach to home page
 
 
-    @invalid
+    @invalid @login
   Scenario: to test the functionality of login button for invalid input
     Given I am on login page
    # When I enter incorrect username and password
@@ -19,7 +22,7 @@ Feature: all login scenarios
     Then I should get an error
 
 
-      @blank @invalid
+      @blank @invalid @login
   Scenario: to test the functionality of login button for invalid input
     Given I am on login page
    # When I enter blank username and password
